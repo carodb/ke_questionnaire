@@ -1,0 +1,5 @@
+{namespace ke=Kennziffer\KeQuestionnaire\ViewHelpers}
+<f:form.hidden class="{question.uid}_originalRequestedPage" name="originalRequestedPage" value="" />
+<ke:conditionalJump question="{question}" result="{newResult}">
+    {question.javascript}
+</ke:conditionalJump>
